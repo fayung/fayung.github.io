@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RETURN</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/return.css"></link>
+  </head>
+  <body>
+    <nav>
+      <div class="logo" style="
+      background-image: url('assets/img/logo.png');
+      background-repeat: no-repeat;
+      background-size: cover;"></div>
+
+      <div class="main_container">
+        <div class="menu" onclick="location.href='index.html'">HOME</div>
+        <div class="menu" onclick="location.href='shop.html'">SHOP</div>
+        <div class="menu" onclick="location.href='return.html'">RETURN</div>
+        <div class="menu" onclick="location.href='about.html'">ABOUT</div>
+        <div class="menu" onclick="location.href='cart.html'">CART</div>
+      </div>
+    </nav>
+
+    
+<!-- ini bagian HEADING DENGAN BACKGROUND  -->
+    <header>
+      <section style="
+      background-image: url('assets/img/headingreturn.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      ">
+        <div>
+          <h1 class="headingreturn"> RETURN </h1>
+          <p class="captionsatu"> Start by providing some information about your purchase so we can locate your order. </p>
+        </div>
+      </section>
+    </header>
+
+    <br><br>
+<!-- Garis -->
+    <hr>
+
+<!-- Kata Sambutan -->
+    <header>
+      <p class="katasambutan">
+        We LOVE feedback, especially from people like you! 
+        If you have any suggestions, questions or comments about our products. 
+        Or you just want to say hey :)
+      </p>
+    </header>
+
+ <!-- Ini bagian sebelum info -->
+    <header>
+      <h2 class="SebelumInformasi">
+        Get in Touch With Us
+      </h2>
+    </header>
+
+<!-- Ini bagian box info -->
+    <header class="boxbaru">
+      <form action="contact.php" method="POST">
+        <legend class="tulisanboxbesar">Name</legend>
+        <p class="tulisanboxkecil">
+          <br>
+          <input class="ansyourname"type="text" name="Name" placeholder="Full Name" />
+        </p>
+       </form>
+
+       <br><br>
+
+       <legend class="tulisanboxbesar">Order No. / ID</legend>
+        <p class="tulisanboxkecil">
+          <label>
+           Please enter # followed by your order number. 
+          </label> 
+          <br><br>
+          <input class="orderno" type="text" name="Order No. / ID" placeholder="#AB123" />
+        </p>
+
+       <br><br>
+
+       <legend class="tulisanboxbesar"> Date of Purchase </legend>
+        <p class="tulisanboxkecil">
+          <br>
+          <input class="tanggal" type="date" name="Date of Purchase" placeholder="DD/MM/YYYY" />
+        </p>
+        
+        <br><br>
+        
+       <legend class="tulisanboxbesar"> Country </legend>
+        <p class="tulisanboxkecil">
+          <br>
+          <select name="Country">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Philippine">Philippine</option>
+            <option value="Thailand">Thailand</option>
+          </select>
+        </p>
+
+        <br><br>
+
+       <legend class="tulisanboxbesar"> Email </legend>
+        <p class="tulisanboxkecil">
+          <label>
+            Please enter the email from the details when you purchased your items.         
+          </label> 
+          <br><br>
+          <input class="email" type="email" name="Email" placeholder="abcdefg@hihihi.com" />
+        </p>
+    
+        <br><br>
+  
+        <legend class="tulisanboxbesar"> Phone No. </legend>
+        <p class="tulisanboxkecil">
+          <label>
+            Please enter the phone number from the details when you purchased your items.
+         </label> 
+          <br><br>
+          <input class="notelp" type="text" name="Phone No." placeholder="08xxxxxxxxx" />
+        </p>
+
+        <br><br>
+
+        <legend class="tulisanboxbesar">Message</legend>
+        <p class="tulisanboxkecil">
+          <br>
+          <input class="message" type="text" name="Message" placeholder=" " />
+        </p>
+    </header>
+
+<!-- DONE -->
+    <p>
+      <input class="done" type="submit" name="Done" value="DONE" />
+    </p>
+    
+<!-- Bagian Bawah -->
+<br><br><hr>
+    <footer style="text-align: center;">
+     <p class="penutupsatu">Got a question about your order?</p>
+     <p class="penutupdua"> WE MIGHT BE ABLE TO HELP HERE</p>
+    </footer>
+  </body>
+</html>
+    

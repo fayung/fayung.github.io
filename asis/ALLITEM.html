@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>UNIQLO</title>
+      <link rel="stylesheet" type="text/css" href="assets/css/ALLITEM.css"></link>
+      <script src="assets/data.js"></script>
+    </head>
+    <body>
+      <nav>
+        <div class="logo" style="
+        background-image: url('assets/img/logo.png');
+        background-repeat: no-repeat;
+        background-size: cover;"></div>
+
+        <div class="main_container">
+          <div class="menu" onclick="location.href='index.html'">HOME</div>
+          <div class="menu" onclick="location.href='shop.html'">SHOP</div>
+          <div class="menu" onclick="location.href='return.html'">RETURN</div>
+          <div class="menu" onclick="location.href='about.html'">ABOUT</div>
+      
+        </div>
+      </nav>
+
+      <!-- Header Category  -->
+    <header>
+        <section class="headercategory">
+            <div class="category" onclick="location.href='index.html'">ALL</div>
+            <div class="category" onclick="location.href='index.html'">TOPS</div>
+            <div class="category" onclick="location.href='index.html'">BOTTOMS</div>
+            <div class="category" onclick="location.href='index.html'">ACCESSORIES</div>
+            <div class="category" onclick="location.href='index.html'">SALE</div>
+          </div>
+        </section>
+      </header>
+  
+      <br><br>
+  <!-- Garis -->
+      <hr>
+
+      <body>
+        <div class="eachResto" id="restoResults"></div>
+      </body>
+    </html>
+    <script>
+var restos = [
+{
+  nama: "Women's Long-Sleeve Crop Top",
+  price: "$50",
+  status: "Sale",
+  tel: "Top",
+  foto: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/176f3892-1351-48d0-a160-45998177f50a/sportswear-womens-long-sleeve-crop-top-86kP9n.png",
+},
+{
+  nama: "Nike Sportswear Phoenix Fleece",
+  price: "$70",
+  status: "Best Seller",
+  tel: "Bottom",
+  foto: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/176f3892-1351-48d0-a160-45998177f50a/sportswear-womens-long-sleeve-crop-top-86kP9n.png",
+},
+{
+  nama: "Nike Echo Shield",
+  price: "$120",
+  status: "",
+  tel: "Accesory",
+  foto: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/176f3892-1351-48d0-a160-45998177f50a/sportswear-womens-long-sleeve-crop-top-86kP9n.png",
+},
+
+]
+
+      var restonya = '';
+      for (var r=0; r < restos.length; r++) {
+        restonya = restonya + '<div class="eachResto">' + restos[r].foto + '" /><h3>' + restos[r].nama +
+          '<span class="statusResto">' + restos[r].status + 
+            '</span></h3><h4>' + restos[r].price +
+            '</h4><h5>' + restos[r].tel + '</h5></div>';
+      }
+      document.getElementById('restoResults').innerHTML = restonya;
+    </script>
+    
+    
+    
+
+    
